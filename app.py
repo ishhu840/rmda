@@ -94,7 +94,7 @@ month_mapping = {
 dengue_df["Month"] = dengue_df["Month"].map(month_mapping)
 
 # Streamlit App
-st.title("Rawalpindi Climate vs Dengue Cases and Mosquito Population Growth and Trends in Rawalpindi")
+st.title("Climate vs Dengue Cases & Mosquito Population Growth and Trends in Rawalpindi")
 st.markdown("**Analyze the correlation between temperature, rainfall, and dengue cases over the past years (2013 - 2023).**")
 
 # Inputs
@@ -392,4 +392,32 @@ st.markdown("""
    *Medical News Pakistan* Report, June 26, 2024  
    [Read More](https://www.medicalnews.pk/26-Jun-2024/8-064-dengue-larvae-sites-detected-in-rawalpindi?utm_source=chatgpt.com)
 """)
+
+
+# Custom footer with styling
+footer = """
+    <style>
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+    <div class="footer">
+        📢 <b>This analysis is for educational purposes only.</b><br>
+        🏫 <b>Supervised by:</b> Dr. Valerie Odon, Strathclyde University, UK<br>
+        💻 <b>Developed by:</b> Odon’s Lab, PhD Students<br>
+        📌 <i>Note: All data used here is completely publicly available.</i>
+    </div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)
 
