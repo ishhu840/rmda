@@ -81,8 +81,8 @@ month_mapping = {
 dengue_df["Month"] = dengue_df["Month"].map(month_mapping)
 
 # Streamlit App
-st.title("Rawalpindi Climate vs Dengue Cases")
-st.markdown("**Analyze the correlation between temperature, rainfall, and dengue cases over the past 10 years.**")
+st.title("Rawalpindi Climate vs Dengue Cases and osquito Population Growth and Trends in Rawalpindi")
+st.markdown("**Analyze the correlation between temperature, rainfall, and dengue cases over the past years (2013 - 2023).**")
 
 # Inputs
 start_date = "20130101"  # Start date for the past 10 years
