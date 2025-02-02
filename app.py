@@ -394,21 +394,19 @@ st.markdown("""
 """)
 
 
-# Custom footer with styling
+# Custom footer with styling (appears at the bottom, not fixed)
 footer = """
     <style>
         .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
             width: 100%;
             background-color: #f8f9fa;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             font-size: 14px;
             font-weight: bold;
             color: #333;
             border-top: 1px solid #ddd;
+            margin-top: 50px;
         }
     </style>
     <div class="footer">
@@ -419,5 +417,6 @@ footer = """
     </div>
 """
 
-st.markdown(footer, unsafe_allow_html=True)
+st.write("\n" * 20)
 
+st.markdown(footer, unsafe_allow_html=True)
