@@ -367,14 +367,19 @@ ax2.set_title("Dengue Larvae Sites in Rawalpindi (2024)")
 # Show the plot
 st.pyplot(fig2)
 
-st.markdown("### References")
+st.markdown("### **References**")
 st.markdown("""
-1. **2016 Study on Aedes Mosquitoes in Rawalpindi**  
-   Published in *Journal of Vector Borne Diseases*  
-   [Read More](https://journals.lww.com/jvbd/fulltext/2016/53020/spatial_distribution_and_insecticide.7.aspx?utm_source=chatgpt.com)
+- **Dengue Cases Data from 2013-2023 in Rawalpindi & Adjacent Hospitals**  
+  *Rawalpindi Medical University (RMU) DDEAG Database*  
+  [Read More](https://rmur.edu.pk/rmu-ddeag/)
 
-2. **2024 Report on Dengue Larvae in Rawalpindi**  
-   *Medical News Pakistan* Report, June 26, 2024  
-   [Read More](https://www.medicalnews.pk/26-Jun-2024/8-064-dengue-larvae-sites-detected-in-rawalpindi?utm_source=chatgpt.com)
+- **2016 Study on Aedes Mosquitoes in Rawalpindi**  
+  Published in *Journal of Vector Borne Diseases*  
+  [Read More](https://journals.lww.com/jvbd/fulltext/2016/53020/spatial_distribution_and_insecticide.7.aspx?utm_source=chatgpt.com)
+
+- **2024 Report on Dengue Larvae in Rawalpindi**  
+  *Medical News Pakistan* Report, June 26, 2024  
+  [Read More](https://www.medicalnews.pk/26-Jun-2024/8-064-dengue-larvae-sites-detected-in-rawalpindi?utm_source=chatgpt.com)
 """)
+
 
