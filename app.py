@@ -9,6 +9,19 @@ import matplotlib.pyplot as plt
 # NASA POWER API Base URL
 BASE_URL = "https://power.larc.nasa.gov/api/temporal/daily/point"
 
+# Hide Streamlit status bar
+hide_bar = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        div.st-emotion-cache-1kyxreq {
+            display: none !important;
+        }
+    </style>
+"""
+st.markdown(hide_bar, unsafe_allow_html=True)
+
 # Function to fetch climate data
 def fetch_nasa_data(lat, lon, start, end, parameters):
     params = {
